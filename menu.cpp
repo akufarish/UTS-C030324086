@@ -6,14 +6,13 @@ using namespace std;
 
 void dMenu(){
 system("cls");
-cout<<"Aplikasi Tampilan Menu"<<"\n";       
-cout<<"1. Menu Pertama"<<"\n";            
-cout<<"2. Menu Kedua"<<"\n";            
-cout<<"3. Menu Ketiga"<<"\n";           
-cout<<"4. Menu Keempat"<<"\n";            
+cout<<"Sort Insertion"<<"\n";       
+cout<<"1. Memasukkan data"<<"\n";            
+cout<<"2. Menampilkan data"<<"\n";            
+cout<<"3. Sorting"<<"\n";           
+cout<<"4. Sepatah kata"<<"\n";         
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
-
 }
 
 void mPertama(string pesan){
@@ -64,12 +63,11 @@ do
     mPertama("pertama");
     break;
    case '2':
-    // mPertama("ke- dua");
-    insertionSort(data, sizeof(data) / sizeof(data[0]));
+    mPertama("ke- dua");
     /* code */ 
     break;  
-   case '3':
-    mPertama("ke- tiga");
+    case '3':
+    insertionSort(data, sizeof(data) / sizeof(data[0]));
     /* code */
     break;  
    case '4':
