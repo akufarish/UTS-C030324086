@@ -50,8 +50,8 @@ void sepatahKata() {
 
 int main() {
 char pl;
-int data[10] = {5, 2, 9, 1, 5, 6, 3, 7, 8, 4};
-
+int data[10];
+int arrSize = (sizeof(data) / sizeof(data[0]));
 do
 {
     dMenu();
@@ -67,7 +67,7 @@ do
     /* code */ 
     break;  
     case '3':
-    insertionSort(data, sizeof(data) / sizeof(data[0]));
+    insertionSort(data, arrSize);
     /* code */
     break;  
    case '4':
