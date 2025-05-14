@@ -53,6 +53,20 @@ void inputData(int data[], int n){
     getch();
 }
 
+void outputData(int data[], int n){
+    system("cls");
+  
+    cout << "\nData yang Anda masukkan adalah:\n";
+    
+    cout << "{";
+    for (int i = 0; i < n; i++) {
+        cout << data[i];
+        if (i < n - 1) cout << ", ";
+    }
+    cout << "}" << endl;
+    getch();
+}
+
 void sepatahKata() {
   system("cls");
   cout << "Halo dunia" << endl;
@@ -71,10 +85,10 @@ do
   {
    case '1':
     /* code */
-    mPertama("pertama");
-    break;
-   case '2':
     inputData(data, arrSize);
+    break;
+    case '2':
+    outputData(data, arrSize);
     /* code */ 
     break;  
     case '3':
@@ -82,7 +96,7 @@ do
     /* code */
     break;  
    case '4':
-    mPertama("ke- empat");
+    sepatahKata();
     /* code */
     break;  
   case '5':
