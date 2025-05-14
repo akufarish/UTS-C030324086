@@ -42,6 +42,17 @@ void insertionSort(int data[], int n) {
   getch();
 }
 
+void inputData(int data[], int n){
+    system("cls");    
+
+    cout << "Masukkan 10 angka: ";
+    for (int i = 0; i < n; i++) {
+        cin >> data[i];
+    }
+
+    getch();
+}
+
 void sepatahKata() {
   system("cls");
   cout << "Halo dunia" << endl;
@@ -63,7 +74,7 @@ do
     mPertama("pertama");
     break;
    case '2':
-    mPertama("ke- dua");
+    inputData(data, arrSize);
     /* code */ 
     break;  
     case '3':
