@@ -87,8 +87,8 @@ do
     /* code */
     inputData(data, arrSize);
     break;
-    case '2':
-    outputData(data, arrSize);
+   case '2':
+    mPertama("ke- dua");
     /* code */ 
     break;  
     case '3':
